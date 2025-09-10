@@ -17,6 +17,10 @@ Flight::group('/api', function () {
    V1::index();
 });
 
+Flight::route('GET /health', function () {
+   Flight::json(['message' => 'API is alive']);
+});
+
 
 
 
